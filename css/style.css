@@ -1,0 +1,222 @@
+/**********
+*** FONT START ***
+**********/
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat-Light"),
+    url("../fonts/Montserrat-Light.woff2") format("woff2"),
+    url("../fonts/Montserrat-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat-Regular"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Montserrat-Medium"),
+    url("../fonts/Montserrat-Medium.woff2") format("woff2"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Montserrat-SemiBold"),
+    url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat-Bold"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff");
+}
+
+/**********
+*** FONT END ***
+**********/
+
+/**********
+*** COLOR START ***
+**********/
+:root {
+  --black: #000000;
+
+  --white: #FFFFFF;
+  --white-100: #F7F7F7;
+
+  --grey: #C4C4C4;
+  --grey-100: #CECECE;
+  --grey-200: #A8A8A8;
+  --grey-300: #C3CBD9;
+  --grey-400: #CAC8C8;
+
+  --blue: #597FAE;
+  --blue-100: #5980AE;
+
+  --grin: #00B227;
+  --grin-100 :#52AE95;
+}
+
+/**********
+*** COLOR END ***
+**********/
+
+/**********
+*** COMMON START ***
+**********/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dt {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+textarea {
+  outline: transparent;
+  border: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: var(--black);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+/* .button {
+  border-radius: 6px;
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  box-shadow: 0 1px 2px 0 rgba(56, 56, 56, 0.08);
+  font-weight: 500;
+  line-height: normal;
+  height: 40px;
+  padding: 0px 17px;
+  align-items: center;
+  transition: box-shadow .3s;
+}
+
+.button:hover {
+  box-shadow: 2px 3px 2px 3px rgba(56, 56, 56, 0.08);
+}
+
+.btn-blue {
+  background-color: var(--blue);
+  border-radius: 6px;
+  padding: 0 16px;
+  align-items: center;
+  font-weight: 500;
+  line-height: normal;
+  color: var(--white);
+  height: 40px;
+  transition: box-shadow .3s;
+}
+
+.btn-blue:hover {
+  box-shadow: 2px 5px 8px 1px rgba(62, 27, 27, 0.218);
+} */
+
+.main {
+  flex-grow: 1;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1695px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+/**********
+*** COMMON END ***
+**********/
