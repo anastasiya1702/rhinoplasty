@@ -202,6 +202,24 @@ body {
   font-weight: 500;
   line-height: 27px;
   border-bottom: 2px dashed var(--blue);
+  transition: all .3s;
+}
+
+.text-link:hover {
+  opacity: 0.7;
+}
+
+.title-bold {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 47px;
+}
+
+.title-light {
+  font-size: 54px;
+  line-height: 61px;
+  font-weight: 300;
 }
 /**********
 *** COMMON END ***
@@ -293,8 +311,15 @@ body {
 }
 
 .social-list__link {
+  display: block;
   width: 100%;
   height: auto;
+  transition: all 0.3s;
+}
+
+.social-list__link:hover {
+  scale: 1.1;
+  opacity: 0.7;
 }
 
 .social-list__img {
@@ -364,6 +389,11 @@ body {
 .menu__link {
   font-weight: 500;
   text-transform: uppercase;
+  transition: all .3s;
+}
+
+.menu__link:hover {
+  opacity: 0.7;
 }
 
 .header-content {
@@ -649,19 +679,6 @@ body {
   margin-bottom: 33px;
 }
 
-.difference-title__bold {
-  font-size: 54px;
-  font-weight: 700;
-  line-height: 61px;
-  margin-bottom: 47px;
-}
-
-.difference-title__light {
-  font-size: 54px;
-  line-height: 61px;
-  font-weight: 300;
-}
-
 .difference-text__bold {
   font-size: 24px;
   font-weight: 600;
@@ -814,4 +831,103 @@ body {
 }
 /**********
 *** DIFFERENCE END ***
+**********/
+
+/**********
+*** SALE START ***
+**********/
+.sale {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.title-bold--sale {
+  margin-bottom: 60px;
+}
+
+.sale__item {
+  display: flex;
+}
+
+.sale__item-box {
+  display: block;
+  margin-right: 40px;
+  max-width: 725px;
+  width: 100%;
+}
+
+.sale__items {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 29px;
+  padding: 52px 76px;
+  text-align: left;
+  max-width: 930px;
+  width: 100%;
+  position: relative;
+}
+
+.sale__items--small:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+.sale-price {
+  margin-bottom: 35px;
+}
+
+.sale-price__new {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 37.5px;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: center;
+  width: 177px;
+  border-radius: 13px;
+  padding: 14px 0;
+  background-color: var(--blue);
+  box-shadow: 0px 0px 35px 0px rgba(89, 127, 174, 0.65);
+  margin-bottom: 15px;
+}
+
+.sale-price__old {
+  color: rgba(255, 255, 255, 0.47);
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 37.5px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.sale__title {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 37.5px;
+  text-transform: uppercase;
+  color: var(--white);
+  max-width: 420px;
+  width: 100%;
+}
+
+.sale__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--white);
+  border-bottom: 1px dashed var(--white);
+}
+
+.sale__link:hover {
+  color: var(--white-100);
+  border-bottom: 1px dashed var(--white-100);
+  opacity: 0.7;
+}
+
+.sale__box {
+  position: absolute;
+  bottom: 50px;
+}
+/**********
+*** SALE END ***
 **********/
