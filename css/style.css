@@ -625,3 +625,193 @@ body {
 /**********
 *** FOOTER END ***
 **********/
+
+/**********
+*** DIFFERENCE START ***
+**********/
+.difference {
+  padding: 82px 0px 60px 0;
+  text-align: center;
+}
+
+.difference__wrapper {
+  padding-left: 6px;
+}
+
+.difference__item {
+  margin-bottom: 66px;
+}
+
+.difference-title {
+  font-size: 38px;
+  line-height: 47px;
+  font-weight: 300;
+  margin-bottom: 33px;
+}
+
+.difference-title__bold {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 47px;
+}
+
+.difference-title__light {
+  font-size: 54px;
+  line-height: 61px;
+  font-weight: 300;
+}
+
+.difference-text__bold {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  position: relative;
+  padding-left: 96px;
+}
+
+.difference-text__bold::before {
+  position: absolute;
+  content: url(../img/svg/scroll.svg);
+  top: -27px;
+  left: 21%;
+}
+
+.difference-text__light {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+.slider {
+  margin-bottom: 30px;
+}
+
+.slider-item__box {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.slider-item__images {
+  position: relative;
+}
+
+.slider-item__images::before {
+  position: absolute;
+  content: url(../img/svg/arrow_left_right.svg);
+  background-color: var(--white);
+  width: 65px;
+  height: 65px;
+  padding: 22px 8px;
+  border-radius: 50%;
+  top: 43%;
+  left: 46%;
+}
+
+.slider-item__images:nth-child(1) {
+  margin-right: 42px;
+}
+
+.slider__img {
+  object-fit: cover;
+  border-radius: 30px;
+  width: 820px;
+}
+
+.slider-before-bold,
+.slider-after-bold {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.slider-before {
+  position: absolute;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.74);
+  padding: 6px 0 13px 6px;
+  width: 150px;
+  top: 30px;
+  left: 31px;
+}
+
+.slider-after {
+  top: 30px;
+  right: 33px;
+  width: 183px;
+  position: absolute;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.74);
+  padding: 9px 0 13px 9px;
+}
+
+.slick-dots li button {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--grey);
+}
+
+.slick-dots li button:hover {
+  background-color: var(--blue);
+  opacity: 0.7;
+}
+
+.slick-dots li button:before {
+  font-size: 0;
+  line-height: 0;
+  width: 13px;
+  height: 13px;
+}
+
+.slick-dots li {
+  width: 13px;
+  height: 13px;
+  margin: 0 13px; 
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: var(--blue);
+  border-radius: 50%;
+  color: transparent;
+  opacity: 1;
+}
+
+.slick-dots {
+  bottom: -99px;
+}
+
+.slick-prev,
+.slick-next {
+  top: 119%;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: var(--blue);
+}
+
+.slick-prev {
+  left: 37%;
+}
+
+.slick-next {
+  right: 36%;
+}
+
+.slick-prev:before,
+.slick-next:before { 
+  content: url(../img/svg/slider-arrow.svg);
+  opacity: 1;
+}
+
+.slick-disabled {
+  background-color: var(--white-100);
+  background-image: url(../img/svg/slider-button.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/**********
+*** DIFFERENCE END ***
+**********/
