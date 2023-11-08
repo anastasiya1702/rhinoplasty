@@ -1,28 +1,28 @@
 $(function () {
 
-  // $('.product-slide__thumb').slick({
-  //   asNavFor: '.product-slide__big',
-  //   focusOnSelect: true,
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   vertical: true,
-  //   draggable: false
-  // });
+  $('.services-slide__thumb').slick({
+    asNavFor: '.services-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    vertical: false,
+    draggable: false
+  });
 
-  // $('.product-slide__big').slick({
-  //   asNavFor: '.product-slide__thumb',
-  //   draggable: false,
-  //   arrows: false,
-  //   fade: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1051,
-  //       settings: {
-  //         draggable: true,
-  //       }
-  //     },
-  //   ]
-  // });
+  $('.services-slide__big').slick({
+    asNavFor: '.services-slide__thumb',
+    draggable: true,
+    arrows: false,
+    fade: false,
+    responsive: [
+    {
+        breakpoint: 1051,
+        settings: {
+          draggable: true,
+        }
+      },
+     ]
+   });
 
   $('.certificat-slider').slick({
     dots: true,
