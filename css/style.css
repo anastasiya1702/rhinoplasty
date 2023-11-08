@@ -1504,7 +1504,7 @@ body {
   margin-bottom: 45px;
 }
 
-.social-list__text {
+.social-text {
   margin-right: 24px;
 }
 
@@ -1528,10 +1528,77 @@ body {
 }
 
 .blockquote {
-  transform: skew(20deg);
+  transform: skew(15deg);
+  font-style: normal;
 }
 /**********
 *** AUTHOR END ***
+**********/
+
+/**********
+*** CERTIFICAT START ***
+**********/
+.certificat {
+  padding-bottom: 155px;
+  margin-top: -54px;
+}
+
+.certificat__wrapper {
+  display: flex;
+  padding: 60px 60px 80px 90px;
+  align-items: center;
+}
+
+.certificat__item {
+  max-width: 380px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.certificat-title,
+.certificat-title__light {
+  margin-bottom: 30px;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 61px;
+}
+
+.certificat-title__light {
+  font-weight: 300;
+}
+
+.certificat-text,
+.certificat-text__light {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+.certificat-text__light {
+  font-weight: 300;
+}
+
+.certificat-slider {
+  display: flex !important;
+  width: 73%;
+}
+
+.certificat-slider__item {
+  display: flex !important;
+  
+}
+
+.certificat-slider__img {
+  max-width: 355px;
+  object-fit: cover;
+}
+
+.certificat-slider__img:not(:last-child) {
+  margin-right: 20px;
+}
+/**********
+*** CERTIFICAT END ***
 **********/
 
 
