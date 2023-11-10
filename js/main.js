@@ -1,5 +1,10 @@
 $(function () {
 
+  $('.js-collapse-btn').on('click', function () {
+    $(this).siblings('.js-collapse-box').slideToggle();
+    $(this).toggleClass('js-collapse-btn--active');
+  });
+
   $('.services-slide__thumb').slick({
     asNavFor: '.services-slide__big',
     focusOnSelect: true,
