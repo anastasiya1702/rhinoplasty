@@ -37,18 +37,10 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 1600,
+    prevArrow: '<button type="button" class="slick-prev slick-prev--certificat"></button>',
+    nextArrow: '<button type="button" class="slick-next slick-next--certificat slick-disabled slick-disabled--certificat"></button>',
     infinite: false,
-  });
-
-  $('.review-slider').slick({
-    dots: true,
-    arrows: true,
-    fade: true,
-    autoplay: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplaySpeed: 1600,
-    infinite: false,
+    dotsClass: 'slick-dots slick-dots--certificat',
   });
 
   $('.details-tabs__top-item').on('click', function (e) {
@@ -68,6 +60,24 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplaySpeed: 1600,
+    infinite: false,
+  });
+
+});
+
+
+$(function () {
+
+  $('.review-slider').slick({
+    dots: true,
+    autoplay: false,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    initialSlide: 3,
+    autoplaySpeed: 1600,
+    prevArrow: '<button type="button" class="slick-prev slick-prev--review"></button>',
+    nextArrow: '<button type="button" class="slick-next slick-next--review"></button>',
     infinite: false,
   });
 
