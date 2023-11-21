@@ -23,14 +23,6 @@ $(function () {
     draggable: true,
     arrows: false,
     fade: false,
-    responsive: [
-    {
-        breakpoint: 1051,
-        settings: {
-          draggable: true,
-        }
-      },
-     ]
    });
 
   $('.certificat-slider').slick({
@@ -65,6 +57,15 @@ $(function () {
     slidesToScroll: 1,
     autoplaySpeed: 1600,
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 1051,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+    ]
   });
 
 });
