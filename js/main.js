@@ -1,5 +1,9 @@
 $(function () {
 
+  $('.menu__btn').on('click', function () {
+    $('.header__menu').toggleClass('header__menu--active');
+  });
+
   $('.js-collapse-btn').on('click', function () {
     $(this).siblings('.js-collapse-box').slideToggle();
     $(this).toggleClass('js-collapse-btn--active');

@@ -29,6 +29,9 @@
               эстетической медицине
               с 2014 года</p>
         </div>
+        <button class="menu__btn">
+          <span class="menu__span"></span>
+        </button>
         <div class="header__top-item header__top-item--second">
             <img class="header__top-img" src="img/klinik.png" alt="klinik">
           <div class="header__top-second">
@@ -39,7 +42,7 @@
             <a class="text-link" href="#">Посмотреть видео о клинике</a>
           </div>
         </div>
-        <div class="header__top-item header__top-item--third">
+        <div class="header__top-item header__top-item--third header__top-item--adaptive">
           <div class="header__top-number">
             5,0
           </div>
@@ -84,7 +87,7 @@
             </li>
           </ul>
         </div>
-        <div class="header__top-item header__top-item--address">
+        <div class="header__top-item header__top-item--address header__top-item--adaptive">
           <div class="header__top-block">
             <p class="text-bold text-bold--address">Звоните,</p>
             <p class="text">Пн-ВС 8:00 - 21:00</p>
@@ -96,12 +99,54 @@
               Москва, ул. Б. Очаковская, д.31
             </a>
         </div>
+        <div class="header-box">
+          <div class="header__top-item header__top-item--box header__top-item--third">
+            <div class="header__top-number">
+              5,0
+            </div>
+            <div class="header__top-box">
+              <div class="star" data-rateyo-rating="5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="137" height="22" viewBox="0 0 137 22" fill="none">
+                  <path
+                    d="M10.5812 0.515915L13.8503 7.14342L21.1674 8.20501L15.8743 13.3641L17.1244 20.6465L10.5812 17.2087L4.04298 20.6465L5.29308 13.3641L0 8.20501L7.31209 7.14342L10.5812 0.515915Z"
+                    fill="#FAC917" />
+                  <path
+                    d="M39.3533 0.515915L42.6224 7.14342L49.9395 8.20501L44.6464 13.3641L45.8965 20.6465L39.3533 17.2087L32.8151 20.6465L34.0652 13.3641L28.7721 8.20501L36.0842 7.14342L39.3533 0.515915Z"
+                    fill="#FAC917" />
+                  <path
+                    d="M68.3735 0.515915L71.6426 7.14342L78.9597 8.20501L73.6666 13.3641L74.9167 20.6465L68.3735 17.2087L61.8353 20.6465L63.0854 13.3641L57.7924 8.20501L65.1044 7.14342L68.3735 0.515915Z"
+                    fill="#FAC917" />
+                  <path
+                    d="M97.1457 0.515915L100.415 7.14342L107.732 8.20501L102.439 13.3641L103.689 20.6465L97.1457 17.2087L90.6074 20.6465L91.8575 13.3641L86.5645 8.20501L93.8766 7.14342L97.1457 0.515915Z"
+                    fill="#FAC917" />
+                  <path
+                    d="M126.414 0.515915L129.683 7.14342L137 8.20501L131.707 13.3641L132.957 20.6465L126.414 17.2087L119.876 20.6465L121.126 13.3641L115.833 8.20501L123.145 7.14342L126.414 0.515915Z"
+                    fill="#FAC917" />
+                </svg>
+              </div>
+              <div class="header__top-text">
+                <p class="text-bold">Рейтинг клиники</p>
+                <p class="text">согласно</p>
+              </div>
+              <a class="text-link" href="#">отзывам наших пациентов</a>
+            </div>
+          </div>
+          <div class="header__top-item header__top-item--box header__top-item--address">
+            <div class="header__top-block">
+              <p class="text-bold text-bold--address">Звоните,</p>
+              <p class="text">Пн-ВС 8:00 - 21:00</p>
+            </div>
+            <a class="tel-link" href="tel:74992868860">
+              +7 (499) 286 88 60
+            </a>
+            <a class="header-address" href="#">
+              Москва, ул. Б. Очаковская, д.31
+            </a>
+          </div>
+        </div>
       </div>
       <div class="header__menu">
         <nav class="menu">
-          <button class="menu__btn">
-            <span></span>
-          </button>
           <ul class="menu__list">
             <li class="menu__item">
               <a class="menu__link" href="#">
@@ -149,7 +194,7 @@
     </div>
     <div class="container">
       <div class="header-content">
-        <h1 class="title">
+        <h1 class="title header-title">
           Ринопластика <span class="title__bold">110 000 рублей
           в рассрочку</span> от 20 минут
         </h1>
@@ -193,7 +238,7 @@
                 </p>
               </li>
             </ul>
-            <div class="header-content__block">
+            <div class="header-content__block header-content__block--none">
               <div class="header-content__video">
                 <a class="header-content__play" href="https://www.youtube.com/watch?v=Jj7ie899Q0s">
                   <img class="header-content__images" src="img/video-img.jpg" alt="video-img">
@@ -210,7 +255,7 @@
           <div class="header-content__bottom">
             <div class="header-content__wrapp">
               <div class="header-content__item header-content__item--consultation">
-                <button class="button" type="button">
+                <button class="button button-header" type="button">
                   Записаться на бесплатную<br>
                   консультацию с фотомоделированием
                 </button>
@@ -218,36 +263,51 @@
                   * Акция действительна до: 11.05.2022
                 </p>
               </div>
-              <div class="header-content__item header-content__item--social">
-                <p class="text-bold text-bold--question">
-                  Есть вопросы?
-                </p>
-                <p class="text text-online">
-                  Спросите ONLINE
-                </p>
-                <ul class="social-list">
-                  <li class="social-list__item">
-                    <a class="social-list__link" href="#">
-                      <img class="social-list__img" src="img/svg/whatsapp.svg" alt="whatsapp">
-                    </a>
-                  </li>
-                  <li class="social-list__item">
-                    <a class="social-list__link" href="#">
-                      <img class="social-list__img" src="img/svg/telegram.svg" alt="telegram">
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="name">
-                <div class="name__box">
-                  <a class="name__link" href="#">
-                    Константин Харитонов
-                  </a>
+              <div class="header-content__items">
+                <div class="header-content__item header-content__item--social">
+                  <p class="text-bold text-bold--question">
+                    Есть вопросы?
+                  </p>
+                  <p class="text text-online">
+                    Спросите ONLINE
+                  </p>
+                  <ul class="social-list">
+                    <li class="social-list__item">
+                      <a class="social-list__link" href="#">
+                        <img class="social-list__img" src="img/svg/whatsapp.svg" alt="whatsapp">
+                      </a>
+                    </li>
+                    <li class="social-list__item">
+                      <a class="social-list__link" href="#">
+                        <img class="social-list__img" src="img/svg/telegram.svg" alt="telegram">
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <p class="text text-name">
-                  Пластический хирург <br>
-                  клиники “Revitalife”
-                </p>
+                <div class="name">
+                  <div class="name__box">
+                    <a class="name__link" href="#">
+                      Константин Харитонов
+                    </a>
+                  </div>
+                  <p class="text text-name">
+                    Пластический хирург <br>
+                    клиники “Revitalife”
+                  </p>
+                </div>
+                <div class="header-content__block header-content__block--adaptive">
+                  <div class="header-content__video">
+                    <a class="header-content__play" href="https://www.youtube.com/watch?v=Jj7ie899Q0s">
+                      <img class="header-content__images" src="img/video-img.jpg" alt="video-img">
+                    </a>
+                  </div>
+                  <p class="text-bold">
+                    Результат операции
+                  </p>
+                  <p class="text">
+                    видео 15 сек.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -261,7 +321,7 @@
   <main class="main">
 
     <!-- DIFFERENCE START -->
-    <section class="difference">
+    <!-- <section class="difference">
       <div class="container">
         <div class="difference__wrapper">
           <div class="difference__item">
@@ -401,11 +461,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- DIFFERENCE END -->
 
     <!-- SALE START -->
-    <section class="sale">
+    <!-- <section class="sale">
       <div class="container">
         <h3 class="title-bold title-bold--sale">
           Акции и скидки <span class="title-light">в нашей клинике</span>
@@ -465,11 +525,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- SALE END -->
 
     <!-- SPECIALTY START -->
-    <section class="specialty">
+    <!-- <section class="specialty">
       <div class="container">
         <h3 class="title-bold">
           <span class="title-light">Мы специализируемся</span>
@@ -536,11 +596,11 @@
           Посмотреть медицинскую лицензию
         </a>
       </div>
-    </section>
+    </section> -->
     <!-- SPECIALTY END -->
 
     <!-- DETAILS START -->
-    <section class="details">
+    <!-- <section class="details">
       <div class="container">
         <h3 class="title-bold">
           <span class="title-light">Подробно</span>
@@ -666,11 +726,11 @@
           </div> 
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- DETAILS END -->
 
     <!-- SERVICE START -->
-    <section class="service">
+    <!-- <section class="service">
       <div class="container">
         <ul class="service__list">
           <li class="service__item">
@@ -852,11 +912,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- SERVICE END -->
 
     <!-- REVIEW START -->
-    <section class="review">
+    <!-- <section class="review">
       <div class="container container-review">
         <h2 class="title-bold">
           Личные истории пациентов и случаи из практики<br>
@@ -1125,11 +1185,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- REVIEW END -->
 
     <!-- AUTHOR START -->
-    <section class="author">
+    <!-- <section class="author">
       <div class="container">
         <div class="author__wrapper">
           <h2 class="title-bold author__title">
@@ -1225,11 +1285,11 @@
           
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- AUTHOR END -->
 
     <!-- CERTIFICAT START -->
-    <section class="certificat">
+    <!-- <section class="certificat">
       <div class="container">
         <div class="certificat__wrapper">
           <div class="certificat__item">
@@ -1277,11 +1337,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- CERTIFICAT END -->
 
     <!-- SERVICES START -->
-    <section class="services">
+    <!-- <section class="services">
       <div class="container">
         <div class="services__wrapper">
           <div class="services-slide">
@@ -1402,11 +1462,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- SERVICES END -->
 
     <!-- QUESTIONS START -->
-    <section class="questions">
+    <!-- <section class="questions">
       <div class="container">
         <h2 class="title-bold questions-title">
           Отвечаем
@@ -1604,11 +1664,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- QUESTIONS END -->
 
     <!-- MAP START -->
-    <section class="map">
+    <!-- <section class="map">
       <div id="map"></div>
       <h2 class="sr-only">Map</h2>
       <div class="map-content">
@@ -1687,14 +1747,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- MAP END -->
 
   </main>
   <!-- MAIN END -->
 
   <!-- FOOTER START -->
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container footer-container">
       <div class="footer__wrapper">
         <a class="logo logo-footer" href="#">
@@ -1720,7 +1780,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <!-- FOOTER END -->
 
   <script async src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
