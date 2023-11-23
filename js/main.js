@@ -29,7 +29,7 @@ $(function () {
         settings: {
           slidesToShow: 3,
         }
-      }
+      },
     ]
   });
 

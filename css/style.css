@@ -998,7 +998,7 @@ body {
     display: none;
   }
 
-  .name {
+  .header-name {
     display: none;
   }
 }
@@ -2084,7 +2084,7 @@ body {
   margin-bottom: 45px;
 }
 
-.social-text {
+.social-author__text {
   margin-right: 24px;
 }
 
@@ -2093,10 +2093,8 @@ body {
   height: 69px;
 }
 
-.name-author {
-  position: absolute;
-  right: 25px;
-  bottom: 80px;
+.author__blockquote-box {
+  position: relative;
 }
 
 .author__blockquote {
@@ -2111,6 +2109,137 @@ body {
   transform: skew(15deg);
   font-style: normal;
 }
+
+.name-author {
+  position: absolute;
+  right: 25px;
+  bottom: 77px;
+}
+
+
+@media screen and (max-width: 1700px) {
+  .author::after {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .author::after {
+    content: url(../img/haritonov2-min.png);
+    right: 8%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .author::after {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .author__block {
+    margin-bottom: 45px;
+  }
+
+  .social-author {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 170px;
+    margin-bottom: 145px;
+  }
+
+  .social-author__text {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .author__blockquote-box {
+    padding: 0 5px;
+    max-width: 70%;
+    margin-bottom: -35px;
+  }
+
+  .name-author {
+    bottom: 125px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .name-author {
+    bottom: 127px;
+  }
+}
+
+@media screen and (max-width: 857px) {
+  .name-author {
+    bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .name-author {
+    bottom: 174px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .author-list__item {
+    padding-left: 30px;
+  }
+
+  .name-author {
+    bottom: -54px;
+  }
+
+  .author__blockquote-box {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .author::after {
+    display: none;
+  }
+
+  .social-author {
+    margin-bottom: 35px;
+  }
+
+  .author__blockquote-box {
+    margin-bottom: 0;
+  }
+
+  .name-author {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .author__blockquote-box {
+    max-width: 100%;
+  }
+
+  .author__blockquote {
+    transform: skew(0deg);
+    padding-left: 0;
+  }
+
+  .blockquote {
+    transform: skew(0deg);
+  }
+
+  .name__box {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .name-author {
+    right: 0;
+    left: 0;
+  }
+}
+
 /**********
 *** AUTHOR END ***
 **********/
@@ -2169,7 +2298,6 @@ body {
 
 .certificat-slider__item {
   display: flex !important;
-  
 }
 
 .certificat-slider__img {
@@ -2181,9 +2309,9 @@ body {
   margin-right: 20px;
 }
 
-/* .slick-dots--certificat {
+.slick-dots--certificat {
   bottom: -7px;
-} */
+} 
 
 .slick-prev--certificat {
   top: 89%;
@@ -2829,7 +2957,7 @@ body {
     text-align: center;
   }
 
-  .text-name {
+  .questions-name {
     color: var(--white);
   }
 
