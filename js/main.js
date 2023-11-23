@@ -83,22 +83,50 @@ $(function () {
     ]
   });
 
-});
-
-
-$(function () {
-
   $('.review-slider').slick({
     dots: true,
     autoplay: false,
     arrows: true,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 3,
     autoplaySpeed: 1600,
     prevArrow: '<button type="button" class="slick-prev slick-prev--review"></button>',
     nextArrow: '<button type="button" class="slick-next slick-next--review"></button>',
+    dotsClass: 'slick-dots slick-dots--review',
     infinite: false,
+    responsive: [
+      {
+        breakpoint: 1430,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1050,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 765,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
+    ]
   });
 
 });
