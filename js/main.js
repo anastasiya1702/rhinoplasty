@@ -15,7 +15,22 @@ $(function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     vertical: false,
-    draggable: false
+    draggable: false,
+    arrows:false,
+    responsive: [
+      {
+        breakpoint: 665,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          slidesToShow: 3,
+        }
+      }
+    ]
   });
 
   $('.services-slide__big').slick({
