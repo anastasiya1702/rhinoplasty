@@ -1758,6 +1758,149 @@ body {
 .text-details {
   margin-bottom: 24px;
 }
+
+.details-name {
+  display: none;
+}
+
+.details-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .details-tabs__top-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .details-tabs__content {
+    margin-bottom: 50px;
+  }
+
+  .details__box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .details__list:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .details__list {
+    max-width: 100%;
+  }
+
+  .details__item:last-child {
+    border-bottom: 1px dashed var(--black);
+  }
+
+  .details-description {
+    padding: 39px 67px 62px 40px;
+  }
+
+  .details-description__list,
+  .details-description__info,
+  .details-description__subtitle {
+    padding-left: 390px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .details-tabs__top {
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+
+  .details-tabs__top-item {
+    margin-bottom: 43px;
+  }
+
+  .details-description__subtitle {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .details-description::before {
+    content: url(../img/haritonovblue2-min.png);
+    left: 0;
+  }
+
+  .details-description__list {
+    padding-left: 0;
+  }
+
+  .details-description__info {
+    padding-left: 336px;
+  }
+
+  .details-name {
+    display: flex;
+    margin-top: 105px;
+    z-index: 9;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .details-description::before {
+    display: none;
+  }
+
+  .details-description__info {
+    padding-left: 0;
+  }
+
+  .details-name {
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .details {
+    padding: 35px 0 50px 0;
+  }
+
+  .details-tabs {
+    margin-bottom: 25px;
+    padding: 10px 0;
+  }
+
+  .details-tabs__top-item {
+    margin-bottom: 20px;
+  }
+
+  .details-tabs__top-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .details__item {
+    padding: 17px 0 25px 30px;
+  }
+
+  .details__item::before {
+    left: 0;
+  }
+
+  .details-description {
+    padding: 35px 10px;
+  }
+
+  .details-description__item {
+    padding-left: 25px;
+  }
+
+  .details-description__item::before {
+    left: 0;
+  }
+}
+
+
 /**********
 *** DETAILS END ***
 **********/
