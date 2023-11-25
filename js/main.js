@@ -94,15 +94,23 @@ $(function () {
     slidesToScroll: 1,
     autoplaySpeed: 1600,
     infinite: false,
-    // responsive: [
-    //   {
-    //     breakpoint: 1051,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 3,
-    //     }
-    //   },
-    // ]
+    responsive: [
+      {
+        breakpoint: 1040,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 741,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
+    ]
   });
 
   $('.review-slider').slick({
@@ -150,4 +158,27 @@ $(function () {
     ]
   });
 
+});
+
+$(document).ready(function () {
+  $('body').append('<a href="#" id="go-top"></a>');
+});
+
+$(function () {
+  $.fn.scrollToTop = function () {
+    $(this).hide().removeAttr("href");
+    if ($(window).scrollTop() >= "250") $(this).fadeIn("slow")
+    var scrollDiv = $(this);
+    $(window).scroll(function () {
+      if ($(window).scrollTop() <= "250") $(scrollDiv).fadeOut("slow")
+      else $(scrollDiv).fadeIn("slow")
+    });
+    $(this).click(function () {
+      $("html, body").animate({ scrollTop: 0 }, "slow")
+    })
+  }
+});
+
+$(function () {
+  $("#go-top").scrollToTop();
 });
