@@ -4,6 +4,10 @@ $(function () {
     $('.header__menu').toggleClass('header__menu--active');
   });
 
+  $('.burger, .menu a').click(function (event) {
+    $('.burger,.menu__list').toggleClass('active');
+  });
+
   $('.js-collapse-btn').on('click', function () {
     $(this).siblings('.js-collapse-box').slideToggle();
     $(this).toggleClass('js-collapse-btn--active');
@@ -72,6 +76,7 @@ $(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
+          fade: true,
         }
       },
     ]
@@ -104,6 +109,14 @@ $(function () {
       },
       {
         breakpoint: 741,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 375,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
