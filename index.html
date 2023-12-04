@@ -14,6 +14,8 @@
 </head>
 <body>
 
+  <div class="menu-close"></div>
+
   <!-- HEADER START -->
   <header class="header">
     <div class="container header-container">
@@ -29,8 +31,8 @@
               эстетической медицине
               с 2014 года</p>
         </div>
-        <button class="menu__btn burger">
-          <span class="menu__span burger__line"></span>
+        <button class="menu__btn">
+          <span class="menu__span"></span>
         </button>
         <div class="header__top-item header__top-item--second">
             <img class="header__top-img" src="img/klinik.png" alt="klinik">
@@ -38,7 +40,7 @@
             <p class="text">
               Двухэтажная клиника 1000 кв.м
             </p>
-            <p class="text-bold">открылась в 2020 году в Москве</p>
+            <p class="text-bold text-bold--second">открылась в 2020 году в Москве</p>
             <a class="text-link" href="#">Посмотреть видео о клинике</a>
           </div>
         </div>
@@ -148,6 +150,11 @@
       <div class="header__menu">
         <nav class="menu">
           <ul class="menu__list">
+            <li class="menu__close">
+              <button class="menu__close-btn" href="#">
+                <img src="img/svg/burger.svg" alt="burger">
+              </button>
+            </li>
             <li class="menu__item">
               <a class="menu__link" href="#">
                 СТОИМОСТЬ
@@ -259,7 +266,7 @@
                   Записаться на бесплатную<br>
                   консультацию с фотомоделированием
                 </button>
-                <p class="text">
+                <p class="text text-sale">
                   * Акция действительна до: 11.05.2022
                 </p>
               </div>
@@ -339,67 +346,81 @@
           </div>
           <div class="slider-difference">  
             <div class="slider-item__box">
-              <img class="slider-item__img" src="img/slider/slider-rino.jpg" alt="slider-rino">
-              <p class="slider-before">
-                <span class="slider-before-bold">До</span> операции
-              </p>
-              <p class="slider-after">
-                <span class="slider-after-bold">После</span>операции
-              </p>
+              <div class="slider-item__box-content">
+                <img class="slider-item__img" src="img/slider/slider-rino.jpg" alt="slider-rino">
+                <p class="slider-before">
+                  <span class="slider-before-bold">До</span> операции
+                </p>
+                <p class="slider-after">
+                  <span class="slider-after-bold">После</span>операции
+                </p>
+              </div>
             </div>
             <div class="slider-item__box">
-              <img class="slider-item__img" src="img/slider/slider-rino1.jpg" alt="slider-rino">
-              <p class="slider-before">
-                <span class="slider-before-bold">До</span> операции
-              </p>
-              <p class="slider-after">
-                <span class="slider-after-bold">После</span>операции
-              </p>
+              <div class="slider-item__box-content">
+                <img class="slider-item__img" src="img/slider/slider-rino1.jpg" alt="slider-rino">
+                <p class="slider-before">
+                  <span class="slider-before-bold">До</span> операции
+                </p>
+                <p class="slider-after">
+                  <span class="slider-after-bold">После</span>операции
+                </p>
+              </div>
             </div>
             <div class="slider-item__box">
-              <img class="slider-item__img" src="img/slider/slider-rino.jpg" alt="slider-rino">
-              <p class="slider-before">
-                <span class="slider-before-bold">До</span> операции
-              </p>
-              <p class="slider-after">
-                <span class="slider-after-bold">После</span>операции
-              </p>
+              <div class="slider-item__box-content">
+                <img class="slider-item__img" src="img/slider/slider-rino.jpg" alt="slider-rino">
+                <p class="slider-before">
+                  <span class="slider-before-bold">До</span> операции
+                </p>
+                <p class="slider-after">
+                  <span class="slider-after-bold">После</span>операции
+                </p>
+              </div>
             </div>
             <div class="slider-item__box">
-              <img class="slider-item__img" src="img/slider/slider-rino1.jpg" alt="slider-rino">
-              <p class="slider-before">
-                <span class="slider-before-bold">До</span> операции
-              </p>
-              <p class="slider-after">
-                <span class="slider-after-bold">После</span>операции
-              </p>
+              <div class="slider-item__box-content">
+                <img class="slider-item__img" src="img/slider/slider-rino1.jpg" alt="slider-rino">
+                <p class="slider-before">
+                  <span class="slider-before-bold">До</span> операции
+                </p>
+                <p class="slider-after">
+                  <span class="slider-after-bold">После</span>операции
+                </p>
+              </div>
             </div>
             <div class="slider-item__box">
-              <img class="slider-item__img" src="img/slider/slider-rino.jpg" alt="slider-rino">
-              <p class="slider-before">
-                <span class="slider-before-bold">До</span> операции
-              </p>
-              <p class="slider-after">
-                <span class="slider-after-bold">После</span>операции
-              </p>
+              <div class="slider-item__box-content">
+                <img class="slider-item__img" src="img/slider/slider-rino.jpg" alt="slider-rino">
+                <p class="slider-before">
+                  <span class="slider-before-bold">До</span> операции
+                </p>
+                <p class="slider-after">
+                  <span class="slider-after-bold">После</span>операции
+                </p>
+              </div>
             </div>
             <div class="slider-item__box">
-              <img class="slider-item__img" src="img/slider/slider-rino1.jpg" alt="slider-rino1">
-              <p class="slider-before">
-                <span class="slider-before-bold">До</span> операции
-              </p>
-              <p class="slider-after">
-                <span class="slider-after-bold">После</span>операции
-              </p>
+              <div class="slider-item__box-content">
+                <img class="slider-item__img" src="img/slider/slider-rino1.jpg" alt="slider-rino1">
+                <p class="slider-before">
+                  <span class="slider-before-bold">До</span> операции
+                </p>
+                <p class="slider-after">
+                  <span class="slider-after-bold">После</span>операции
+                </p>
+              </div>
             </div>
             <div class="slider-item__box">
-              <img class="slider-item__img" src="img/slider/slider-rino.jpg" alt="slider-rino">
-              <p class="slider-before">
-                <span class="slider-before-bold">До</span> операции
-              </p>
-              <p class="slider-after">
-                <span class="slider-after-bold">После</span>операции
-              </p>
+              <div class="slider-item__box-content">
+                <img class="slider-item__img" src="img/slider/slider-rino.jpg" alt="slider-rino">
+                <p class="slider-before">
+                  <span class="slider-before-bold">До</span> операции
+                </p>
+                <p class="slider-after">
+                  <span class="slider-after-bold">После</span>операции
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -986,6 +1007,9 @@
             </div>
           </div>
         </div>
+        <!-- <div class="slick-slider-nav">
+          <div class="slick-slider-dots"></div>
+        </div> -->
       </div>
     </section>
     <!-- REVIEW END -->
