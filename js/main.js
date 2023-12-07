@@ -58,7 +58,7 @@ $(function () {
    });
 
 
-  $('.certificat-slider').slick({
+  $('.certificat-slider__items').slick({
     dots: true,
     arrows: true,
     autoplay: false,
@@ -124,8 +124,10 @@ $(function () {
         }
       },
       {
-        breakpoint: 741,
+        breakpoint: 765,
         settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
           arrows: false,
         }
       },
@@ -140,12 +142,11 @@ $(function () {
     slidesToScroll: 1,
     initialSlide: 3,
     autoplaySpeed: 1600,
-    appendArrows: $('.slick-slider-nav'),
-    appendDots: $('.slick-slider-dots'),
-    prevArrow: "<button class='slick-prev btn btn-white rounded-circle'>prev</button>",
-    nextArrow: "<button class='slick-next btn btn-white rounded-circle'>next</button>",
-    //dotsClass: 'slick-dots slick-dots--review',
+    prevArrow: '<button type="button" class="slick-prev slick-prev--review"></button>',
+    nextArrow: '<button type="button" class="slick-next slick-next--review slick-disabled slick-disabled--review"></button>',
+    dotsClass: 'slick-dots slick-dots--review',
     infinite: false,
+    centerMode: false,
     responsive: [
       {
         breakpoint: 1430,
@@ -170,7 +171,7 @@ $(function () {
         }
       },
       {
-        breakpoint: 560,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
